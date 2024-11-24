@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff7f50, #ff6347);
+    color: #fff;
+    text-align: center;
+  }
+  
+  header {
+    padding: 20px;
+    background: #8b0000;
+  }
+  
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .gift-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .gift-list li {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .gift-list li:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  @media (min-width: 768px) {
+    .gift-list li {
+      width: 50%;
+    }
+  }
+  
