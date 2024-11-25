@@ -11,12 +11,96 @@
     <h1>🎄 Mattheus' Christmas List 🎁</h1>
   </header>
   <main>
+    <div id="countdown"></div>
+    <script>
+      const countdown = document.getElementById('countdown');
+      const christmas = new Date('December 25, 2024 00:00:00').getTime();
+    
+      setInterval(() => {
+        const now = new Date().getTime();
+        const timeLeft = christmas - now;
+    
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+        countdown.innerHTML = `🎄 ${days}d ${hours}h ${minutes}m ${seconds}s until Christmas! 🎁`;
+      }, 1000);
+    </script>
+    <div class="gift-grid">
+      <div class="gift-item">
+        <img src="TheCinemaofKrzysztofMarek.jpg" alt="Gift 1">
+        <h3><a href="https://www.abebooks.com/9781903364918/Cinema-Krzysztof-Kieslowski-Variations-Destiny-1903364914/plp">The Cinema of Krzysztof Kieślowski: Variations on Destiny and Chance by Marek Haltof</a></h3>
+        <p>Book on a Polish director I love. Est. $21</p>
+      </div>
+      <div class="gift-item">
+        <img src="PolishCinemaMarek.jpg" alt="Gift 2">
+        <h3><a href="https://www.abebooks.com/9781785339745/Polish-Cinema-History-Haltof-Marek-1785339745/plp">Polish Cinema: A History by Marek Haltof</a></h3>
+        <p>Book broadly on Polish cinema. Est. $30</p>
+      </div>
+      <div class="gift-item">
+        <img src="LarksonaStringEwaMazierska.jpg" alt="Gift 2">
+        <h3><a href="https://www.abebooks.com/9781845452391/Masculinities-Polish-Czech-Slovak-Cinema-1845452399/plp">Larks on a String: Masculinities in Polish and Czech and Slovak Cinema by Ewa Mazierska</a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src="JerzySkolimowskiEwaMazierska.jpg" alt="Gift 2">
+        <h3><a href="https://www.abebooks.com/9781845456771/Jerzy-Skolimowski-Cinema-Nonconformist-Mazierska-1845456777/plp">Jerzy Skolimowski: The Cinema of a Nonconformist by Ewa Mazierska</a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src="ZwillingEnfinigyElectricKettlePro.jpg" alt="Gift 2">
+        <h3><a href="https://www.zwilling.com/us/zwilling-enfinigy-1-l-cool-touch-kettle-pro-53110-101-0/53110-101-0.html">Zwilling Enfinigy Electric Kettle Pro</a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src="Frontgatebathtowelinterracotta.jpg" alt="Gift 2">
+        <h3><a href="https://www.frontgate.com/frontgate-resort-collection-26trade-3b-bath-towels/18414">Frontgate Bath Towel in Terracotta</a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src=".jpg" alt="Gift 2">
+        <h3><a href=""></a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src=".jpg" alt="Gift 2">
+        <h3><a href=""></a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src=".jpg" alt="Gift 2">
+        <h3><a href=""></a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src=".jpg" alt="Gift 2">
+        <h3><a href=""></a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src=".jpg" alt="Gift 2">
+        <h3><a href=""></a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src=".jpg" alt="Gift 2">
+        <h3><a href=""></a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src=".jpg" alt="Gift 2">
+        <h3><a href=""></a></h3>
+        <p></p>
+      </div>
+      <div class="gift-item">
+        <img src=".jpg" alt="Gift 2">
+        <h3><a href=""></a></h3>
+        <p></p>
+      </div>
+    </div>
     <ul class="gift-list">
-      <li>The Cinema of Krzysztof Kieślowski: Variations on Destiny and Chance by Marek Haltof</li>
-      <li>Polish Cinema: A History by Marek Haltof</li>
-      <li>Larks on a String: Masculinities in Polish and Czech and Slovak Cinema by Ewa Mazierska</li>
-      <li>Jerzy Skolimowski: The Cinema of a Nonconformist by Ewa Mazierska</li>
-      <li>Zwilling Enfinigy Electric Kettle Pro</li>
       <li>Front gate bath towel in terracotta</li>
       <li>Thuma classic bed and headboard in walnut</li>
       <li>Bread knife (something on the nicer side so I don’t ever feel like I should upgrade)</li>
