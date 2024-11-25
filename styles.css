@@ -48,8 +48,11 @@ a:hover {
 }
 
 
-/* Individual gift item boxes */
+/* Gift item container as a flexbox */
 .gift-item {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Space between content and the cost */
   background: #fff; /* White background */
   border: 1px solid #ddd; /* Light gray border */
   border-radius: 10px; /* Rounded corners */
@@ -57,8 +60,17 @@ a:hover {
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-  height: 100%; /* Ensures equal height for all boxes */
+  height: 100%; /* Ensures consistent box height */
 }
+
+/* Ensure the cost is always at the bottom */
+.gift-cost {
+  font-size: 16px; /* Slightly larger text */
+  font-weight: bold; /* Makes it stand out */
+  color: #008000; /* Green for a festive touch */
+  margin-top: auto; /* Pushes the cost to the bottom of the flex container */
+}
+
 
 
 /* Gift item hover effect */
@@ -87,13 +99,4 @@ a:hover {
   font-size: 14px;
   color: #666;
   margin: 0;
-}
-
-/* Gift cost always at the bottom */
-.gift-cost {
-  font-size: 16px; /* Slightly larger text */
-  font-weight: bold; /* Makes it stand out */
-  color: #008000; /* Green for festive feel */
-  margin-top: 10px; /* Space above cost */
-  margin-bottom: 0; /* Prevents extra space below */
 }
